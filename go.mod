@@ -1,6 +1,6 @@
-module kkhomeneeds
+module github.com/RionDsilvaCS/kkhomeneeds
 
-go 1.21.0
+go 1.21
 
 require (
 	github.com/gofiber/contrib/jwt v1.0.6
