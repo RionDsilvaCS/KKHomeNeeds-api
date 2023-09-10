@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 	"github.com/gofiber/fiber/v2"
-	"github.com/joho/godotenv"
+	// "github.com/joho/godotenv"
 	"os"
 	"github.com/RionDsilvaCS/kkhomeneeds/models"
 	"github.com/RionDsilvaCS/kkhomeneeds/storage"
@@ -119,10 +119,10 @@ func(r *Repository) SetUpRoutes(app *fiber.App){
 
 
 func main() {
-	err := godotenv.Load(".env")
-	if err != nil {
-		log.Fatal(err)
-	}
+	// err := godotenv.Load(".env")
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
 
 	config := &storage.Config{
 		Host: os.Getenv("DB_HOST"),
